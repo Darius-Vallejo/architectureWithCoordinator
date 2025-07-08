@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your image gallery</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera to take photos.</string>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.176572131116-393btceodj0d34po8loq6msal0or9rs5</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>portfolio.test.likemetric.com</key>
+            <dict>
+                <key>NSTemporaryExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NewBlackTypeface-Medium.ttf</string>
+		<string>NewBlackTypeface-ExtraBold.ttf</string>
+		<string>NewBlackTypeface-Bold.ttf</string>
+		<string>NewBlackTypeface-UltraLight.ttf</string>
+		<string>NewBlackTypeface-SemiBold.ttf</string>
+		<string>NewBlackTypeface-Regular.ttf</string>
+		<string>NewBlackTypeface-Light.ttf</string>
+		<string>Molarum.ttf</string>
+		<string>InterDisplay-Regular.ttf</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>URL_BASE_DEBUG</key>
+	<string>http://localhost:3000/api/</string>
+	<key>URL_BASE_RELEASE</key>
+	<string>https://portfolio.test.likemetric.com/back/api/</string>
+</dict>
+</plist>
